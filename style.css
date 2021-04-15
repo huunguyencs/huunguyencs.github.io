@@ -316,6 +316,12 @@ section .title::after {
 
 /* skills section styling */
 
+.skill-item {
+  margin-left: 50px;
+  height: 40px;
+  width: 40px;
+}
+
 .skills .title::after {
   content: "what i know";
 }
@@ -353,27 +359,28 @@ section .title::after {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 18px;
+  margin: 0 50px;
 }
 .skills .skills-content .right .line {
   height: 5px;
   width: 100%;
   background: lightgrey;
-  position: relative;
+  /* position: relative; */
 }
 .skills .skills-content .right .line::before {
   content: "";
-  position: absolute;
+  /* position: absolute; */
   height: 100%;
   left: 0;
   top: 0;
   background: #3377ff;
 }
-.skills-content .right .python::before {
+/* .skills-content .right .python::before {
   width: 90%;
 }
 .skills-content .right .cpp::before {
@@ -387,7 +394,7 @@ section .title::after {
 }
 .skills-content .right .git::before {
   width: 60%;
-}
+} */
 
 /* certificate section styling */
 .certificate .title::after {
