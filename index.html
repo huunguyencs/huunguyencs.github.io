@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -31,101 +31,103 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
-    <nav class="nav" id="nav">
-      <div class="nav__inner">
-        <a href="#home" class="nav__logo" aria-label="Home"
-          >HuuNg<span class="accent">.</span></a
-        >
-        <button class="nav__toggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav__menu">
-          <li><a href="#about" class="nav__link">About</a></li>
-          <li><a href="#experience" class="nav__link">Experience</a></li>
-          <li><a href="#skills" class="nav__link">Skills</a></li>
-          <li><a href="#education" class="nav__link">Education</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
-          <li><a href="/blogs" class="nav__link">Blog</a></li>
-          <li><a href="/features" class="nav__link">Features</a></li>
+    <!-- Masthead — N6 -->
+    <header class="mast">
+      <p class="mast__line">Software Engineer · Ho Chi Minh City</p>
+      <a href="#home" class="mast__name" aria-label="Home"
+        >HuuNg<span class="accent">.</span></a
+      >
+      <nav class="mast__nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about" class="mast__link">About</a></li>
+          <li><a href="#experience" class="mast__link">Experience</a></li>
+          <li><a href="#skills" class="mast__link">Skills</a></li>
+          <li><a href="#education" class="mast__link">Education</a></li>
+          <li><a href="#contact" class="mast__link">Contact</a></li>
+          <li><a href="/blogs" class="mast__link">Blog</a></li>
+          <li><a href="/features" class="mast__link">Features</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <hr class="mast__rule" aria-hidden="true" />
+    </header>
 
     <main>
-      <!-- Hero -->
+      <!-- Hero — Marquee -->
       <section class="hero" id="home">
-        <div class="container">
-          <div class="hero__content">
-            <p class="hero__greeting reveal">Hello, I'm</p>
-            <h1 class="hero__name reveal reveal--delay-1">Nguyen Van Huu</h1>
-            <div class="hero__rule reveal reveal--delay-2"></div>
-            <p class="hero__title reveal reveal--delay-2">Software Engineer</p>
-            <p class="hero__subtitle reveal reveal--delay-3">
-              Backend-focused · JavaScript & TypeScript · Cloud Infrastructure
-            </p>
-            <div class="hero__links reveal reveal--delay-3">
-              <a
-                href="https://github.com/huunguyencs"
-                target="_blank"
-                rel="noopener"
-                class="hero__social"
-                aria-label="GitHub"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/van-huu-nguyen-171b67195/"
-                target="_blank"
-                rel="noopener"
-                class="hero__social"
-                aria-label="LinkedIn"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a
-                href="mailto:nguyenvanhuucse@gmail.com"
-                class="hero__social"
-                aria-label="Email"
-              >
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
+        <div class="wrap">
+          <div class="hero__inner">
+          <p class="hero__greeting reveal">Hello, I’m</p>
+          <h1 class="hero__name reveal d1">Nguyen Van&nbsp;Huu</h1>
+          <hr class="hero__rule reveal d2" aria-hidden="true" />
+          <p class="hero__role reveal d2">Software Engineer</p>
+          <p class="hero__desc reveal d3">
+            Backend-focused · JavaScript &amp; TypeScript · Cloud Infrastructure
+          </p>
+          <div class="hero__links reveal d4">
+            <a
+              href="https://github.com/huunguyencs"
+              target="_blank"
+              rel="noopener"
+              class="hero__social"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/van-huu-nguyen-171b67195/"
+              target="_blank"
+              rel="noopener"
+              class="hero__social"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a
+              href="mailto:nguyenvanhuucse@gmail.com"
+              class="hero__social"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="hero__scroll reveal reveal--delay-3">
-            <span>Scroll</span>
-            <div class="hero__scroll-line"></div>
           </div>
         </div>
       </section>
 
+      <hr class="rule-thick" aria-hidden="true" />
+
       <!-- About -->
       <section class="section" id="about">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__number">01</span>
-            <h2 class="section__title">About</h2>
-          </div>
-          <div class="about__details">
-            <div class="about__detail">
+        <div class="wrap">
+          <div class="sec__head reveal"><h2 class="sec__title">About</h2></div>
+          <div class="about reveal">
+            <div class="about__row">
               <span class="about__label">Location</span>
               <span class="about__value">Ho Chi Minh City, Vietnam</span>
             </div>
-            <div class="about__detail">
+            <div class="about__row">
               <span class="about__label">Focus</span>
               <span class="about__value">Backend · Frontend · DevOps</span>
             </div>
-            <div class="about__detail">
+            <div class="about__row">
               <span class="about__label">Experience</span>
               <span class="about__value">4+ years in software engineering</span>
             </div>
-            <div class="about__detail">
+            <div class="about__row">
               <span class="about__label">Email</span>
               <a
                 href="mailto:nguyenvanhuucse@gmail.com"
-                class="about__value about__value--link"
+                class="about__value"
                 >nguyenvanhuucse@gmail.com</a
               >
             </div>
@@ -135,160 +137,147 @@
 
       <!-- Experience -->
       <section class="section section--alt" id="experience">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__number">02</span>
-            <h2 class="section__title">Experience</h2>
+        <div class="wrap">
+          <div class="sec__head reveal">
+            <h2 class="sec__title">Experience</h2>
           </div>
-          <div class="timeline">
-            <div class="timeline__item">
-              <div class="timeline__date">
-                <span class="timeline__period">Feb 2024 — Present</span>
+          <ol class="ledger reveal">
+            <li class="ledger__row">
+              <div class="ledger__year">
+                <span>Feb 2024</span> — <span class="now">Present</span>
               </div>
-              <div class="timeline__content">
-                <div class="timeline__marker"></div>
-                <h3 class="timeline__role">Software Engineer</h3>
-                <p class="timeline__company">KiteMetric</p>
-                <p class="timeline__desc">
+              <div class="ledger__body">
+                <h3 class="ledger__role">
+                  Software Engineer<span class="ledger__at">KiteMetric</span>
+                </h3>
+                <p class="ledger__desc">
                   Deliver consulting solutions for US-based clients, designing
                   and building systems across multiple industries to meet
                   diverse business requirements.
                 </p>
               </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__date">
-                <span class="timeline__period">Apr 2022 — Feb 2024</span>
+            </li>
+            <li class="ledger__row">
+              <div class="ledger__year">
+                <span>Apr 2022</span> — <span>Feb 2024</span>
               </div>
-              <div class="timeline__content">
-                <div class="timeline__marker"></div>
-                <h3 class="timeline__role">Software Engineer</h3>
-                <p class="timeline__company">EasyGop</p>
-                <p class="timeline__desc">
+              <div class="ledger__body">
+                <h3 class="ledger__role">
+                  Software Engineer<span class="ledger__at">EasyGop</span>
+                </h3>
+                <p class="ledger__desc">
                   Built a Buy Now Pay Later platform enabling customers to split
                   purchases into scheduled installments.
                 </p>
-                <p class="timeline__desc">
+                <p class="ledger__desc">
                   Developed a healthcare underwriting system that helps cancer
                   patients access lower treatment costs by evaluating their
                   medical submissions.
                 </p>
               </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__date">
-                <span class="timeline__period">Jun 2021 — Sep 2021</span>
+            </li>
+            <li class="ledger__row">
+              <div class="ledger__year">
+                <span>Jun 2021</span> — <span>Sep 2021</span>
               </div>
-              <div class="timeline__content">
-                <div class="timeline__marker"></div>
-                <h3 class="timeline__role">CV Engineer Intern</h3>
-                <p class="timeline__company">TMA Solutions</p>
-                <p class="timeline__desc">
+              <div class="ledger__body">
+                <h3 class="ledger__role">
+                  CV Engineer Intern<span class="ledger__at">TMA Solutions</span>
+                </h3>
+                <p class="ledger__desc">
                   Prepared datasets and trained computer vision models.
                   Researched papers and fine-tuned models to improve accuracy
                   and performance.
                 </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
       <!-- Skills -->
       <section class="section" id="skills">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__number">03</span>
-            <h2 class="section__title">Skills</h2>
-          </div>
-          <div class="skills__grid">
-            <div class="skills__group">
-              <h3 class="skills__category">Languages</h3>
-              <div class="skills__tags">
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
-              </div>
+        <div class="wrap">
+          <div class="sec__head reveal"><h2 class="sec__title">Skills</h2></div>
+          <dl class="index reveal">
+            <div class="index__row">
+              <dt class="index__cat">Programming Languages</dt>
+              <dd class="index__items">
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">Rust</span>
+              </dd>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__category">Backend</h3>
-              <div class="skills__tags">
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">PostgreSQL</span>
-              </div>
+            <div class="index__row">
+              <dt class="index__cat">Backend</dt>
+              <dd class="index__items">
+                <span class="tag">Node.js</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">PostgreSQL</span>
+              </dd>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__category">Frontend</h3>
-              <div class="skills__tags">
-                <span class="skill-tag">React</span>
-              </div>
+            <div class="index__row">
+              <dt class="index__cat">Frontend</dt>
+              <dd class="index__items">
+                <span class="tag">React.js</span>
+                <span class="tag">Tailwind CSS</span>
+              </dd>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__category">DevOps & Cloud</h3>
-              <div class="skills__tags">
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Docker</span>
-              </div>
+            <div class="index__row">
+              <dt class="index__cat">DevOps &amp; Cloud</dt>
+              <dd class="index__items">
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+              </dd>
             </div>
-            <div class="skills__group">
-              <h3 class="skills__category">Tools</h3>
-              <div class="skills__tags">
-                <span class="skill-tag">Claude Code</span>
-                <span class="skill-tag">Git</span>
-              </div>
+            <div class="index__row">
+              <dt class="index__cat">Tools</dt>
+              <dd class="index__items">
+                <span class="tag">Claude Code</span>
+                <span class="tag">Git</span>
+                <span class="tag">Jira</span>
+              </dd>
             </div>
-          </div>
+          </dl>
         </div>
       </section>
 
       <!-- Education -->
       <section class="section section--alt" id="education">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__number">04</span>
-            <h2 class="section__title">Education</h2>
+        <div class="wrap">
+          <div class="sec__head reveal">
+            <h2 class="sec__title">Education</h2>
           </div>
-          <div class="education">
-            <div class="education__card">
-              <div class="education__icon">
-                <i class="fa-solid fa-graduation-cap"></i>
-              </div>
-              <div class="education__info">
-                <h3 class="education__school">
-                  Ho Chi Minh City University of Technology
-                </h3>
-                <p class="education__degree">
-                  Bachelor's Degree in Computer Science
-                </p>
-                <p class="education__meta">2018 — 2022</p>
-              </div>
-            </div>
+          <div class="edu reveal">
+            <h3 class="edu__school">
+              Ho Chi Minh City University of Technology
+            </h3>
+            <p class="edu__degree">Bachelor’s Degree in Computer Science</p>
+            <p class="edu__meta">2018 — 2022</p>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- Contact — statement close -->
       <section class="section" id="contact">
-        <div class="container">
-          <div class="section__header">
-            <span class="section__number">05</span>
-            <h2 class="section__title">Contact</h2>
+        <div class="wrap">
+          <div class="sec__head reveal">
+            <h2 class="sec__title">Contact</h2>
           </div>
-          <div class="contact">
+          <div class="reveal">
+            <p class="contact__label">Get in touch</p>
+            <a class="contact__email" href="mailto:nguyenvanhuucse@gmail.com"
+              >nguyenvanhuucse@gmail.com</a
+            >
             <div class="contact__methods">
-              <a
-                href="mailto:nguyenvanhuucse@gmail.com"
-                class="contact__method"
-              >
-                <i class="fa-solid fa-envelope"></i>
-                <span>nguyenvanhuucse@gmail.com</span>
-              </a>
               <a
                 href="https://github.com/huunguyencs"
                 target="_blank"
                 rel="noopener"
                 class="contact__method"
               >
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
                 <span>github.com/huunguyencs</span>
               </a>
               <a
@@ -297,7 +286,7 @@
                 rel="noopener"
                 class="contact__method"
               >
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                 <span>linkedin.com/in/van-huu-nguyen</span>
               </a>
             </div>
@@ -306,27 +295,29 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <span class="footer__copy">&copy; 2026 Nguyen Van Huu</span>
-          <div class="footer__links">
-            <a
-              href="https://github.com/huunguyencs"
-              target="_blank"
-              rel="noopener"
-              aria-label="GitHub"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/van-huu-nguyen-171b67195/"
-              target="_blank"
-              rel="noopener"
-              aria-label="LinkedIn"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </div>
-        </div>
+    <!-- Footer — Ft1 Mast-headed -->
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <p class="foot__mark">Nguyen Van Huu</p>
+        <p class="foot__tag">Software Engineer · Ho Chi Minh City</p>
+        <p class="foot__links">
+          <a
+            href="https://github.com/huunguyencs"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          ·
+          <a
+            href="https://www.linkedin.com/in/van-huu-nguyen-171b67195/"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+          ·
+          <a href="mailto:nguyenvanhuucse@gmail.com">Email</a>
+        </p>
+        <p class="foot__copy">© 2026 Nguyen Van Huu</p>
       </div>
     </footer>
 

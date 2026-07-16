@@ -1,0 +1,65 @@
+/* Hallmark · tokens — dark editorial, warm-tinted
+ * diversification axes: paper-band=dark (L16%) · display=high-contrast-serif · accent=warm
+ */
+:root {
+    /* ── Colour ── */
+    --color-paper:      oklch(16% 0.008 60);
+    --color-paper-2:    oklch(19% 0.010 58);
+    --color-paper-3:    oklch(23% 0.012 58);
+    --color-ink:        oklch(91% 0.014 78);
+    --color-ink-muted:  oklch(69% 0.013 72);
+    --color-ink-dim:    oklch(53% 0.011 66);
+    --color-rule:       oklch(33% 0.010 60);
+    --color-rule-soft:  oklch(26% 0.009 60);
+    --color-accent:     oklch(73% 0.115 58);
+    --color-accent-hi:  oklch(81% 0.100 62);
+    --color-focus:      oklch(81% 0.100 62);
+
+    /* ── Type ── */
+    --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+    --font-body:    'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:    'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+    --text-xs:   0.75rem;
+    --text-sm:   0.85rem;
+    --text-base: 1rem;
+    --text-lg:   1.15rem;
+    --text-xl:   1.4rem;
+    --text-2xl:  clamp(1.6rem, 3vw, 2.1rem);
+    --text-3xl:  clamp(2rem, 4.5vw, 3rem);
+    --text-display-s: clamp(2.4rem, 6vw, 4rem);
+    --text-display:   clamp(3rem, 10vw, 7rem);
+
+    /* ── Space (4pt scale) ── */
+    --space-2xs: 0.25rem;
+    --space-xs:  0.5rem;
+    --space-sm:  0.75rem;
+    --space-md:  1rem;
+    --space-lg:  1.5rem;
+    --space-xl:  2.5rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6.5rem;
+    --space-4xl: 9rem;
+
+    /* ── Rules / radius ── */
+    --rule-hair: 1px;
+    --radius-sm: 3px;
+    --radius-md: 6px;
+
+    /* ── Motion ── */
+    --dur-short: 0.2s;
+    --dur-mid:   0.4s;
+    --dur-long:  0.85s;
+    --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+    /* ── Layout ── */
+    --page-gutter: clamp(20px, 5vw, 80px);
+    --measure: 62ch;
+    --container: 1120px;
+
+    /* ── Z scale ── */
+    --z-base: 1;
+    --z-nav:  100;
+}
